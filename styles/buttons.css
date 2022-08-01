@@ -1,7 +1,63 @@
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  transition: var(--hover-transition);
+}
+
+button {
+  cursor: pointer;
+  transition: var(--hover-transition);
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+}
+
 .purple-btn {
   background-color: var(--purple-color);
   padding: 1rem 3rem;
   border-radius: 1.75rem;
   color: #fff;
   text-transform: uppercase;
+}
+
+.link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  border-bottom: 2px solid var(--purple-color);
+  padding-bottom: 1px;
+}
+
+.link:hover {
+  color: var(--purple-color);
+  opacity: 1;
+}
+
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  width: 4.5rem;
+  column-gap: .2rem;
+}
+
+.slider-btn-next,
+.slider-btn-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.18rem;
+  height: 2.18rem;
+  background-color: var(--purple-color);
+  color: #fff;
+  border-radius: 50%;
 }

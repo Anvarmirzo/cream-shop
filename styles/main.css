@@ -1,10 +1,13 @@
 :root {
   /* Transitions */
-  --opacity-transition: opacity .2s ease-in-out;
+  --hover-transition: all .2s ease-in-out;
   --mobile-menu-transition: top .35s ease-in-out;
 
   /* Colors */
   --purple-color: #7373D7;
+  --dark-color: #222222;
+  --gray-color: #9B9B9B;
+  --grey-color: #555555;
 }
 
 body {
@@ -12,27 +15,11 @@ body {
   font-size: 100%;
 }
 
-a {
-  color: inherit;
-  display: inline-block;
-  text-decoration: none;
-  transition: var(--opacity-transition);
-}
-
-button {
-  cursor: pointer;
-  transition: var(--opacity-transition);
-}
-
-a:hover,
-button:hover {
-  opacity: .85;
-}
-
 ul {
   list-style-type: none;
   padding-left: 0;
 }
+
 
 .container {
   width: 100%;

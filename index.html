@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cream Shop</title>
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<!-- Main styles -->
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -74,8 +77,76 @@
 			</div>
 		</div>
 	</header>
+
+	<!-- Products -->
+	<section class="products">
+		<div class="container">
+			<div class="products-head">
+				<h2 class="h2">discover our products</h2>
+
+				<nav class="products-nav">
+					<a class="link" href="##">shop all</a>
+					<div class="slider-arrows">
+						<button class="btn slider-btn-prev" title="Previous slide">
+							<svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.123698 5.54036C0.0412326 5.4579 0 5.36024 0 5.2474C0 5.13455 0.0412326 5.03689 0.123698 4.95443L4.95443 0.123698C5.03689 0.0412325 5.13455 0 5.2474 0C5.36024 0 5.4579 0.0412325 5.54036 0.123698L6.62109 1.20443C6.70356 1.28689 6.74479 1.38455 6.74479 1.4974C6.74479 1.61024 6.70356 1.7079 6.62109 1.79036L3.16406 5.2474L6.62109 8.70443C6.70356 8.78689 6.74479 8.88455 6.74479 8.9974C6.74479 9.11024 6.70356 9.2079 6.62109 9.29037L5.54036 10.3711C5.4579 10.4536 5.36024 10.4948 5.2474 10.4948C5.13455 10.4948 5.03689 10.4536 4.95443 10.3711L0.123698 5.54036Z"
+									fill="white" />
+							</svg>
+						</button>
+						<button class="btn slider-btn-next" title="Next slide">
+							<svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M7.53906 5.20443C7.62153 5.28689 7.66276 5.38455 7.66276 5.4974C7.66276 5.61024 7.62153 5.7079 7.53906 5.79036L2.70833 10.6211C2.62587 10.7036 2.52821 10.7448 2.41536 10.7448C2.30252 10.7448 2.20486 10.7036 2.1224 10.6211L1.04167 9.54037C0.959201 9.4579 0.917969 9.36024 0.917969 9.2474C0.917969 9.13455 0.959201 9.03689 1.04167 8.95443L4.4987 5.4974L1.04167 2.04036C0.959201 1.9579 0.917969 1.86024 0.917969 1.7474C0.917969 1.63455 0.959201 1.53689 1.04167 1.45443L2.1224 0.373698C2.20486 0.291233 2.30252 0.25 2.41536 0.25C2.52821 0.25 2.62587 0.291233 2.70833 0.373698L7.53906 5.20443Z"
+									fill="white" />
+							</svg>
+						</button>
+					</div>
+				</nav>
+			</div>
+			<!-- Slider main container -->
+			<div class="swiper products-swiper">
+				<div class="swiper-wrapper">
+					<article class="swiper-slide">
+						<div class="products-card">
+							<span class="products-card__status">new</span>
+							<img class="product-card__img" src="./images/home/products/product-1.png"
+								alt="Your Skin But Better CC+ Cream with SPF50 12ml">
+							<a class="products-card__link" href="##">+ Quick Shop</a>
+						</div>
+						<h3 class="h3">Your Skin But Better CC+ Cream with SPF50 12ml</h3>
+						<p class="products-card__price">$28.00</p>
+					</article>
+
+					<article class="swiper-slide">
+						<div class="products-card">
+							<span class="products-card__status">new</span>
+							<img class="product-card__img" src="./images/home/products/product-2.png"
+								alt="Your Skin But Better CC+ Cream with SPF50 12ml">
+							<a class="products-card__link" href="##">+ Quick Shop</a>
+						</div>
+						<h3 class="h3">KEM DUONG VT CICA - VT CICA CREAM</h3>
+						<p class="products-card__price">$28.00 <span>$32.00</span></p>
+					</article>
+
+					<article class="swiper-slide">
+						<div class="products-card">
+							<img class="product-card__img" src="./images/home/products/product-3.png"
+								alt="Your Skin But Better CC+ Cream with SPF50 12ml">
+							<a class="products-card__link" href="##">+ Quick Shop</a>
+						</div>
+						<h3 class="h3">Niche Beauty CCC Cream – Niche Beauty</h3>
+						<p class="products-card__price">$28.00 <span>$32.00</span></p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- Main scripts -->
 <script src="./scripts/index.js"></script>
 
 </html>
