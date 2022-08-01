@@ -1,0 +1,135 @@
+.header {
+  color: #fff;
+  background-image: url('../../images/home/bg/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.header__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__subtitle {
+  text-align: center;
+  font-size: .875rem;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header-nav-menu {
+  display: none;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.header-nav-menu__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.header-nav-burger {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  text-transform: inherit;
+}
+
+.header__logo {
+  max-width: 50%;
+}
+
+.header-nav-menu--mobile {
+  display: flex;
+  position: fixed;
+  top: -62.5rem;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: var(--mobile-menu-transition);
+}
+
+.header-nav-menu--mobile.active {
+  top: 0;
+}
+
+.header-hero {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: auto;
+  margin-bottom: 2.5rem;
+}
+
+.header-hero__subtitle {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: .5rem;
+}
+
+.header-hero__title {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .header-nav {
+    font-weight: 700;
+  }
+
+  .header__subtitle {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .header-nav-menu {
+    display: flex;
+  }
+
+  .header-nav-burger {
+    display: none;
+  }
+
+  .header-nav-menu--mobile {
+    display: none;
+  }
+
+  .header-hero {
+    margin-bottom: 5rem;
+  }
+
+  .header-hero__subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-hero__title {
+    font-size: 4.5rem;
+    line-height: .9;
+    margin-bottom: 3rem;
+  }
+}
