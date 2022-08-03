@@ -2,7 +2,7 @@
   padding-top: 6.25rem;
 }
 
-.section__header--products {
+.section__header {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -144,7 +144,9 @@
 }
 
 @media (min-width: 992px) {
-  .section__header--products {
+
+  /* TODO move to global styles */
+  .section__header {
     flex-direction: row;
     margin-bottom: 1.875rem;
   }

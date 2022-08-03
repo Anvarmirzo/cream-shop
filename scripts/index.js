@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				},
 			},
 		});
+
 		const productsQuestionSwiper = new Swiper('.products-question-swiper', {
 			slidesPerView: 4,
 			spaceBetween: 24,
@@ -63,6 +64,29 @@ document.addEventListener('DOMContentLoaded', function () {
 				},
 				1200: {
 					slidesPerView: 4,
+				},
+			},
+		});
+
+		const collectionsSwiper = new Swiper('.section-collections-swiper', {
+			slidesPerView: 2.1,
+			spaceBetween: 24,
+			freeMode: true,
+			// Navigation arrows
+			navigation: {
+				nextEl: '.section-collections .slider-btn-next',
+				prevEl: '.section-collections .slider-btn-prev',
+			},
+			breakpoints: {
+				// when window width is >= 240px
+				240: {
+					slidesPerView: 1.3,
+					spaceBetween: 8,
+				},
+				// when window width is >= 992px
+				992: {
+					spaceBetween: 24,
+					slidesPerView: 2.1,
 				},
 			},
 		});
