@@ -1,73 +1,74 @@
 :root {
-  /* Transitions */
-  --hover-transition: all .2s ease-in-out;
-  --mobile-menu-transition: top .35s ease-in-out;
+    /* Transitions */
+    --hover-transition: all .2s ease-in-out;
+    --mobile-menu-transition: top .35s ease-in-out;
 
-  /* Colors */
-  --purple-color: #7373D7;
-  --light-purple-color: #C9C9FF;
-  --dark-color: #222222;
-  --gray-color: #9B9B9B;
-  --grey-color: #555555;
+    /* Colors */
+    --purple-color: #7373D7;
+    --light-purple-color: #C9C9FF;
+    --dark-color: #222222;
+    --gray-color: #9B9B9B;
+    --grey-color: #555555;
+    --light-grey-color: #B7B7B7;
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
-  font-size: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 100%;
 }
 
 ul {
-  list-style-type: none;
-  padding-left: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .section {
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 
 .container {
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (min-width: 576px) {
-  .container {
-    width: 540px;
-  }
+    .container {
+        width: 540px;
+    }
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 720px;
-  }
+    .container {
+        width: 720px;
+    }
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 960px;
-  }
+    .container {
+        width: 960px;
+    }
 
-  .section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
+    .section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
+    .container {
+        width: 1140px;
+    }
 }
 
-@media (min-width:1440px) {
-  .container {
-    width: 1280px;
-    padding-left: 0;
-    padding-right: 0;
-  }
+@media (min-width: 1440px) {
+    .container {
+        width: 1280px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
