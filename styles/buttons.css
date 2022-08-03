@@ -25,6 +25,16 @@ button:disabled {
   border-radius: 1.75rem;
   color: #fff;
   text-transform: uppercase;
+  font-weight: 700;
+}
+
+.light-purple-btn {
+  background-color: var(--light-purple-color);
+  padding: 1rem 3rem;
+  border-radius: 1.75rem;
+  color: var(--purple-color);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .link {
