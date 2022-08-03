@@ -1,8 +1,8 @@
-.products {
+.section-products {
   padding-top: 6.25rem;
 }
 
-.products-head {
+.section__header--products {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -10,11 +10,11 @@
   margin-bottom: 1.5rem;
 }
 
-.products-head .h2 {
+.section__header--products .h2 {
   margin-bottom: 1rem;
 }
 
-.products-nav {
+.products-controls {
   display: flex;
   align-items: center;
   column-gap: 1.5rem;
@@ -22,8 +22,8 @@
   justify-content: space-between;
 }
 
-.products .slider-btn-next:disabled,
-.products .slider-btn-prev:disabled {
+.section-products .slider-btn-next:disabled,
+.section-products .slider-btn-prev:disabled {
   background-color: var(--gray-color);
 }
 
@@ -34,7 +34,7 @@
   margin-bottom: .25rem;
 }
 
-.products .h3 {
+.section-products .h3 {
   margin-bottom: .25rem;
 }
 
@@ -55,8 +55,9 @@
   color: var(--purple-color);
 }
 
-.product-card__img {
+.products-card__img {
   margin-bottom: 2.5rem;
+  height: 16rem;
 }
 
 .products-card__link {
@@ -81,17 +82,78 @@
   color: var(--grey-color);
 }
 
+.section-products-question {
+  margin-top: 2.5rem;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.section-products-question__subtitle {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: .625rem;
+}
+
+.section--products-question__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 1.375rem;
+}
+
+.section--products-question__title span {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--purple-color);
+  border-bottom: 1px dashed var(--purple-color);
+}
+
+.products-question-swiper {
+  padding-bottom: 2rem;
+}
+
+.products-question-swiper .swiper-scrollbar {
+  height: 2px;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 1px;
+}
+
+.products-question-swiper .swiper-scrollbar-drag {
+  border-radius: 1px;
+  background-color: var(--purple-color);
+}
+
+.products-question-swiper img {
+  margin: 0 auto 1.375rem;
+}
+
+.products-question-swiper h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: .5rem;
+}
+
+.products-question-swiper p {
+  line-height: 1.6;
+  font-size: .875rem;
+}
+
 @media (min-width: 992px) {
-  .products-head {
+  .section__header--products {
     flex-direction: row;
     margin-bottom: 1.875rem;
   }
 
-  .products-head .h2 {
+  .section__header--products .h2 {
     margin-bottom: 0;
   }
 
-  .products-nav {
+  .products-controls {
     justify-content: center;
     width: auto;
   }
@@ -106,7 +168,26 @@
     height: 3.75rem;
   }
 
-  .product-card__img {
+  .products-card__img {
     margin-bottom: 4.75rem;
+    height: 25.7rem;
+  }
+
+  .section-products-question {
+    margin-top: 5rem;
+  }
+
+  .section-products-question__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .section--products-question__title {
+    font-size: 2.125rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .products-question-swiper h3 {
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
   }
 }

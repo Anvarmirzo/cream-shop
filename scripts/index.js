@@ -18,25 +18,51 @@ document.addEventListener('DOMContentLoaded', function () {
 	})();
 
 	(function sliders() {
-		const productSwiper = new Swiper('.products-swiper', {
+		const productsSwiper = new Swiper('.products-swiper', {
 			slidesPerView: 3.1,
-			spaceBetween: 30,
+			spaceBetween: 24,
 			freeMode: true,
 			// Navigation arrows
 			navigation: {
-				nextEl: '.products .slider-btn-next',
-				prevEl: '.products .slider-btn-prev',
+				nextEl: '.section-products .slider-btn-next',
+				prevEl: '.section-products .slider-btn-prev',
 			},
 			breakpoints: {
 				// when window width is >= 240px
 				240: {
 					slidesPerView: 1.3,
-					spaceBetween: 10,
+					spaceBetween: 8,
 				},
 				// when window width is >= 992px
-
 				992: {
+					spaceBetween: 24,
 					slidesPerView: 3.1,
+				},
+			},
+		});
+		const productsQuestionSwiper = new Swiper('.products-question-swiper', {
+			slidesPerView: 4,
+			spaceBetween: 24,
+			scrollbar: {
+				el: '.products-question-swiper .swiper-scrollbar',
+			},
+			breakpoints: {
+				// when window width is >= 240px
+				240: {
+					slidesPerView: 1,
+					spaceBetween: 8,
+				},
+				// when window width is >= 768px
+				768: {
+					slidesPerView: 2,
+				},
+				// when window width is >= 992px
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 24,
+				},
+				1200: {
+					slidesPerView: 4,
 				},
 			},
 		});
