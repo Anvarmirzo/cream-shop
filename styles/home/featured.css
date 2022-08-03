@@ -1,0 +1,40 @@
+.section-featured {
+  background-color: var(--purple-color);
+  text-align: center;
+  color: #fff;
+}
+
+.section-featured__title {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.section-featured-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-featured-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  .section-featured-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-featured__title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  .section-featured-list-item {
+    padding: 5.5rem;
+  }
+}
