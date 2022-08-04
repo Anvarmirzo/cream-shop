@@ -55,6 +55,10 @@
   color: var(--purple-color);
 }
 
+.products-card__status.muted {
+  background-color: var(--light-purple-color);
+}
+
 .products-card__img {
   margin-bottom: 2.5rem;
   height: 16rem;

@@ -3,11 +3,15 @@
 @import url('./reset.css');
 @import url('./typography.css');
 @import url('./buttons.css');
-@import url('./home/header.css');
+@import url('./header.css');
+
 @import url('./home/products.css');
 @import url('./home/collections.css');
 @import url('./home/glossary.css');
 @import url('./home/featuring.css');
 @import url('./home/shop.css');
 @import url('./home/featured.css');
-@import url('./home/footer.css');
+@import url('./footer.css');
+
+@import url('./breadcrumb.css');
+@import url('./collection/collection.css');

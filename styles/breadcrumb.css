@@ -1,0 +1,29 @@
+.breadcrumb {
+  font-weight: 300;
+  font-size: .875rem;
+  line-height: 1.6;
+  color: var(--dark-color);
+
+}
+
+.breadcrumb,
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.breadcrumb ul::before {
+  content: '/';
+}
+
+.breadcrumb a[href] {
+  color: var(--grey-color);
+  opacity: .5;
+}

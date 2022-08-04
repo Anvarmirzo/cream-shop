@@ -1,0 +1,131 @@
+.section-collection {
+  padding-top: 1rem;
+}
+
+.section-collection .breadcrumb {
+  margin-bottom: .5rem;
+}
+
+.section-collection-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.section-collection-filters select {
+  border: 0;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+.section-collection-filters-view {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.section-collection-filters-view .btn {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+}
+
+.section-collection-filters-view .btn:hover {
+  opacity: .5;
+}
+
+.section-collection-filters-view .btn img {
+  width: 100%;
+}
+
+.section-collection-list {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-collection-list-item--large {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem 1rem;
+  color: #fff;
+}
+
+
+.section-collection-list-item--large img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.section-collection-list-item--large h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+
+.section-collection-list-item--large span {
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.section-collection-info {
+  text-align: center;
+}
+
+.section-collection-info__count {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: .875rem;
+  line-height: 1.6;
+  color: var(--dark-brown-color);
+}
+
+@media (min-width: 768px) {
+  .section-collection-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-collection-list-item--large {
+    grid-column: 1/2 span;
+  }
+}
+
+@media (min-width:992px) {
+  .section-collection-filters {
+    justify-content: flex-end;
+  }
+
+  .section-collection-filters-view {
+    display: none;
+  }
+
+  .section-collection-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem 1.5rem;
+  }
+
+  .section-collection-list-item--large {
+    padding: 2.5rem;
+  }
+
+  .section-collection-list-item--large h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-collection-list-item--large span {
+    font-size: 1rem;
+  }
+}
