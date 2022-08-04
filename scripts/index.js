@@ -91,4 +91,15 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 	})();
+
+	(function collectionCount() {
+		const listLength = document.querySelectorAll(
+			'.section-collection-list-item',
+		)?.length;
+
+		const count = document.getElementById('collection-count');
+		if (count) {
+			count.textContent = listLength || 0;
+		}
+	})();
 });
