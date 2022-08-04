@@ -6,11 +6,11 @@
 }
 
 .header-home--bg {
-  background-image: url('../../images/home/bg/header-bg.jpg');
+  background-image: url('../images/home/bg/header-bg.jpg');
 }
 
 .header-collection--bg {
-  background-image: url('../../images/collection/bg/plp-header-bg.jpg');
+  background-image: url('../images/collection/bg/plp-header-bg.jpg');
 }
 
 .header__container {
