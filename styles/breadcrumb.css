@@ -1,18 +1,14 @@
 .breadcrumb {
+  display: none;
+  align-items: center;
+  column-gap: .5rem;
   font-weight: 300;
   font-size: .875rem;
   line-height: 1.6;
   color: var(--dark-color);
-
 }
 
-.breadcrumb,
-.breadcrumb ul {
-  display: flex;
-  align-items: center;
-  column-gap: .5rem;
-}
-
+.breadcrumb ul,
 .breadcrumb li {
   display: flex;
   align-items: center;
@@ -26,4 +22,10 @@
 .breadcrumb a[href] {
   color: var(--grey-color);
   opacity: .5;
+}
+
+@media (min-width: 992px) {
+  .breadcrumb {
+    display: flex;
+  }
 }

@@ -5,12 +5,14 @@ a {
   transition: var(--hover-transition);
 }
 
-button {
+button,
+label {
   cursor: pointer;
   transition: var(--hover-transition);
 }
 
-button:disabled {
+button:disabled,
+input:disabled+label {
   cursor: default;
 }
 
@@ -37,6 +39,16 @@ button:disabled {
   text-transform: uppercase;
 }
 
+.purple-primary-btn {
+  background-color: var(--purple-color);
+  padding: .75rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 .link {
   font-weight: 600;
   font-size: 18px;
@@ -52,6 +64,13 @@ button:disabled {
   opacity: 1;
 }
 
+.link-underline {
+  text-decoration: underline;
+}
+
+.link-underline:hover {
+  color: var(--purple-color);
+}
 
 .slider-arrows {
   display: flex;
@@ -70,4 +89,71 @@ button:disabled {
   background-color: var(--purple-color);
   color: #fff;
   border-radius: 50%;
+}
+
+/* used sr-only properties */
+.radio-btn input {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+
+.radio-btn label {
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 1px solid var(--light-grey-color);
+  font-weight: 300;
+  font-size: .875rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--dark-color);
+  opacity: 0.5;
+}
+
+.radio-btn input:checked+label {
+  border-color: var(--purple-color);
+  opacity: 1;
+}
+
+.radio-btn input:disabled+label {
+  opacity: .4;
+  text-decoration-line: line-through;
+}
+
+.counter {
+  display: flex;
+  width: max-content;
+  border: 1px solid rgb(183 183 183 / 50%);
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.counter input,
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+.counter input {
+  width: 6.25rem;
+  text-align: center;
+}
+
+.counter button {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.counter button:hover {
+  color: var(--purple-color);
 }
