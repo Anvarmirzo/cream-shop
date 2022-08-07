@@ -129,6 +129,29 @@ document.addEventListener('DOMContentLoaded', function () {
 			galleryThumbs.on('transitionStart', function () {
 				galleryMain.slideTo(galleryThumbs.activeIndex);
 			});
+
+			const resultsSwiper = new Swiper('.section-results-swiper', {
+				slidesPerView: 3,
+				spaceBetween: 24,
+				freeMode: true,
+				// Navigation arrows
+				navigation: {
+					nextEl: '.section-results .slider-btn-next',
+					prevEl: '.section-results .slider-btn-prev',
+				},
+				breakpoints: {
+					// when window width is >= 240px
+					240: {
+						slidesPerView: 1.3,
+						spaceBetween: 8,
+					},
+					// when window width is >= 992px
+					992: {
+						spaceBetween: 24,
+						slidesPerView: 3,
+					},
+				},
+			});
 		}
 	})();
 
