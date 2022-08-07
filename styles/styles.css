@@ -5,6 +5,7 @@
 @import url('./buttons.css');
 @import url('./accordion.css');
 @import url('./header.css');
+@import url('./progress-bar.css');
 
 @import url('./home/products.css');
 @import url('./home/collections.css');
@@ -20,3 +21,5 @@
 @import url('./detail/detail.css');
 @import url('./detail/ingredients.css');
 @import url('./detail/results.css');
+
+@import url('./cart/cart.css');

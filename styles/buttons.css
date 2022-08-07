@@ -51,7 +51,7 @@ input:disabled+label {
 
 .link {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125;
   line-height: 1.6;
   text-transform: uppercase;
   color: var(--dark-color);

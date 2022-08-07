@@ -1,0 +1,12 @@
+.progress {
+  height: .5rem;
+  background-color: #7373d720;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 2rem;
+  background-color: var(--purple-color);
+}

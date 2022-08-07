@@ -53,7 +53,7 @@
 .section-detail-gallery-thumbs {
   display: none;
   order: -1;
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 .section-detail-gallery-thumbs .swiper-slide img {
@@ -123,7 +123,7 @@
 .section-detail-purchase {
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: .5rem;
   font-weight: 300;
   font-size: .875rem;
   line-height: 1.6;
