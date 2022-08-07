@@ -1,0 +1,40 @@
+.section-ingredients {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  color: var(--dark-color);
+}
+
+.section-ingredients--grid {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  height: 100%;
+}
+
+.section-ingredients__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-ingredients .h2 {
+  margin-bottom: 1.5rem;
+}
+
+.section-ingredients__description {
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.6;
+  margin-bottom: 3.875rem;
+}
+
+.section-ingredients__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: calc(50vw - 5rem);
+  object-fit: cover;
+  object-position: top left;
+}

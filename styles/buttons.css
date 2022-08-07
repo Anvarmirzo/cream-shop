@@ -144,8 +144,8 @@ button {
 }
 
 .counter input {
-  width: 6.25rem;
   text-align: center;
+  flex: 1;
 }
 
 .counter button {

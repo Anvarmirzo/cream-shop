@@ -63,6 +63,7 @@
 		</div>
 	</header>
 
+	<!-- Breadcrumb -->
 	<nav class="container">
 		<ul class="breadcrumb">
 			<li>
@@ -81,6 +82,7 @@
 		</ul>
 	</nav>
 
+	<!-- Detail -->
 	<section class="section section-detail">
 		<div class="container">
 			<div class="section-detail__layout">
@@ -105,8 +107,21 @@
 							</div>
 						</div>
 						<div class="section-detail-gallery__controls">
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
+							<button type="button" class="button-prev">
+								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.29289ZM17 7L1 7L1 9L17 9L17 7Z"
+										fill="white" />
+								</svg>
+							</button>
+							<div class="swiper-pagination"></div>
+							<button type="button" class="button-next">
+								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16.7071 7.29289C17.0976 7.68342 17.0976 8.31658 16.7071 8.70711L10.3431 15.0711C9.95262 15.4616 9.31946 15.4616 8.92893 15.0711C8.53841 14.6805 8.53841 14.0474 8.92893 13.6569L14.5858 8L8.92893 2.34315C8.53841 1.95262 8.53841 1.31946 8.92893 0.928932C9.31946 0.538408 9.95262 0.538408 10.3431 0.928932L16.7071 7.29289ZM0 7H16V9H0V7Z"
+										fill="white" />
+								</svg>
+							</button>
 						</div>
 					</div>
 					<div class="swiper-container section-detail-gallery-thumbs">
@@ -145,7 +160,7 @@
 					<p class="section-detail__description"><span>Size</span> 50ml</p>
 					<div class="section-detail__fl">
 						<div class="radio-btn">
-							<input type="radio" name="fl" id="1.7-fl-oz">
+							<input type="radio" name="fl" id="1.7-fl-oz" checked>
 							<label for="1.7-fl-oz">1.7 fl oz</label>
 						</div>
 
@@ -160,7 +175,7 @@
 					</div>
 					<div class="section-detail-purchase">
 						<label>
-							<input type="radio" name="subscription" id="">
+							<input type="radio" name="subscription" id="" checked>
 							$28.00 One time purchase
 						</label>
 						<div class="section-detail-purchase-item__wrapper">
@@ -236,6 +251,24 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Ingredients -->
+	<section class="section-ingredients">
+		<div class="container section-ingredients--grid">
+			<div class="section-ingredients__info">
+				<h2 class="h2">Ingredients</h2>
+				<p class="section-ingredients__description">Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu
+					fugiat nulla pariatur.
+					Excepteur sint
+					occaecat cupidatat non proident.</p>
+			</div>
+			<div>
+				<img class="section-ingredients__img" src="./images/pdp/ingredients.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
 	<!-- Swiper JS -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<!-- Main scripts -->

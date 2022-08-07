@@ -106,8 +106,12 @@ document.addEventListener('DOMContentLoaded', function () {
 				preventInteractionOnTransition: true,
 
 				navigation: {
-					nextEl: '.section-detail-gallery-main .swiper-button-next',
-					prevEl: '.section-detail-gallery-main .swiper-button-prev',
+					nextEl: '.section-detail-gallery-main .button-next',
+					prevEl: '.section-detail-gallery-main .button-prev',
+				},
+				pagination: {
+					el: '.section-detail-gallery-main .swiper-pagination',
+					clickable: true,
 				},
 				effect: 'fade',
 				fadeEffect: {
