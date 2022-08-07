@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	})();
 
 	(function sliders() {
-		if (Swiper) {
+		if (typeof Swiper !== 'undefined') {
 			const productsSwiper = new Swiper('.products-swiper', {
 				slidesPerView: 3.1,
 				spaceBetween: 24,

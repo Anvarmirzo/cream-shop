@@ -6,8 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cream Shop</title>
-	<!-- Swiper CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<!-- Main styles -->
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -70,354 +68,136 @@
 				<a href="##">Home</a>
 				<ul>
 					<li>
-						<a href="##">Best Seller</a>
-						<ul>
-							<li>
-								<a>Universal Mineral Face Lotion SPF55</a>
-							</li>
-						</ul>
+						<a>My Cart</a>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</nav>
 
-	<!-- Detail -->
-	<section class="section section-detail">
+	<!-- Cart -->
+	<section class="section section-cart">
 		<div class="container">
-			<div class="section-detail__layout">
-				<!-- Detail slider -->
-				<div class="section-detail-gallery__container">
-					<div class="swiper-container section-detail-gallery-main">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="./images/collection/products/plp-item.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/products/product-1.png" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/products/product-2.png" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/collections/collections-1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/shop/shop-1.jpg" alt="">
-							</div>
-						</div>
-						<div class="section-detail-gallery__controls">
-							<button type="button" class="button-prev">
-								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.29289ZM17 7L1 7L1 9L17 9L17 7Z"
-										fill="white" />
-								</svg>
-							</button>
-							<div class="swiper-pagination"></div>
-							<button type="button" class="button-next">
-								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M16.7071 7.29289C17.0976 7.68342 17.0976 8.31658 16.7071 8.70711L10.3431 15.0711C9.95262 15.4616 9.31946 15.4616 8.92893 15.0711C8.53841 14.6805 8.53841 14.0474 8.92893 13.6569L14.5858 8L8.92893 2.34315C8.53841 1.95262 8.53841 1.31946 8.92893 0.928932C9.31946 0.538408 9.95262 0.538408 10.3431 0.928932L16.7071 7.29289ZM0 7H16V9H0V7Z"
-										fill="white" />
-								</svg>
-							</button>
-						</div>
+			<div class="section-cart-head">
+				<h2 class="h2">My Cart</h2>
+				<div class="progress">
+					<div class="bar" style="width:85%"></div>
+				</div>
+				<p>$12.00 away from Free Shipping</p>
+			</div>
+
+			<div class="cart-list">
+				<div class="cart-list-item">
+					<div class="cart-list-item__start">
+						<span>Product</span>
 					</div>
-					<div class="swiper-container section-detail-gallery-thumbs">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="./images/collection/products/plp-item.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/products/product-1.png" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/products/product-2.png" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/collections/collections-1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/home/shop/shop-1.jpg" alt="">
-							</div>
-						</div>
+					<div class="cart-list-item__end">
+						<span>Price</span>
+						<span>Quantity</span>
+						<span>Total</span>
 					</div>
 				</div>
 
-				<div>
-					<h2 class="section-detail__title">Niche Beauty CCC Cream – Niche Beauty</h2>
-					<span class="section-detail__price">$28.00</span>
-					<p class="section-detail__description">
-						<span>The original, weightless, scentless sunscreen with SPF 55 that
-							leaves a shinny finish.</span>
-						Formulated with the
-						most
-						sensitive and vulnerable in mind, with a custom blend of natural, gentle and hydrating island ingredients
-						mixed with the
-						most effective skincare-grade actives.
-					</p>
-					<p class="section-detail__description"><span>Size</span> 50ml</p>
-					<div class="section-detail__fl">
-						<div class="radio-btn">
-							<input type="radio" name="fl" id="1.7-fl-oz" checked>
-							<label for="1.7-fl-oz">1.7 fl oz</label>
+				<div class="cart-list-item">
+					<div class="cart-list-item__start">
+						<div class="cart-list-item__img-wrapper">
+							<img src="./images/home/products/product-3.png" alt="">
 						</div>
-
-						<div class="radio-btn">
-							<input type="radio" name="fl" id="2.5-fl-oz">
-							<label for="2.5-fl-oz">2.5 fl oz</label>
-						</div>
-						<div class="radio-btn">
-							<input type="radio" disabled name="fl" id="3.4-fl-oz">
-							<label for="3.4-fl-oz">3.4 fl oz</label>
+						<div class="cart-list-item-description">
+							<h3>Universal mineral face lotion SPF55</h3>
+							<p>Size: 1.7 fl oz</p>
+							<p>One Time Purchase</p>
+							<button class="link-underline desktop-only" type="button">Remove</button>
 						</div>
 					</div>
-					<div class="section-detail-purchase">
-						<label>
-							<input type="radio" name="subscription" id="" checked>
-							$28.00 One time purchase
-						</label>
-						<div class="section-detail-purchase-item__wrapper">
-							<label>
-								<input type="radio" name="subscription" id="">
-								$25.99 Subscribe and save.&nbsp;
-							</label>
-							<a href="##" class="link-underline">Details</a>
-						</div>
-					</div>
-					<div class="section-detail-order">
+					<div class="cart-list-item__end">
+						<span class="cart-list-item__price">$28.00 </span>
 						<div class="counter">
 							<button type="button">-</button>
 							<input type="number" value="1" placeholder="0">
 							<button type="button">+</button>
 						</div>
-						<button class="purple-primary-btn">
-							Add to cart - $<span id="section-detail-total-price">28.00</span>
-						</button>
+						<span class="cart-list-item__total desktop-only">$28.00 </span>
+						<button class="link-underline mobile-only" type="button">Remove</button>
 					</div>
-					<p class="section-detail-starting-price">
-						Starting at $20/mo with &nbsp; <img src="./images/pdp/affirm.png" alt="affirm"> &nbsp;
-						<a href="##" class="link-underline">Learn more</a>
-					</p>
-					<ul class="accordion">
-						<li class="accordion-item">
-							<button class="accordion-item__head" type="button">
-								<h3>Use Instruction</h3>
-								<span>+</span>
-							</button>
-							<div class="accordion-item__body">
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint consequuntur dignissimos libero sunt
-									quae ut error totam inventore. Aperiam, eaque.</p>
-							</div>
-						</li>
+				</div>
 
-						<li class="accordion-item">
-							<button class="accordion-item__head" type="button">
-								<h3>Ingredients</h3>
-								<span>+</span>
-							</button>
-							<div class="accordion-item__body">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident esse earum veniam itaque magnam
-									animi ipsum aspernatur molestias nobis expedita sed fugiat ut quos consectetur repellendus
-									reprehenderit, natus odit officia.</p>
-							</div>
-						</li>
+				<div class="cart-list-item">
+					<div class="cart-list-item__start">
+						<div class="cart-list-item__img-wrapper">
+							<img src="./images/home/products/product-3.png" alt="">
+						</div>
+						<div class="cart-list-item-description">
+							<h3>Universal mineral face lotion SPF55</h3>
+							<p>Size: 1.7 fl oz</p>
+							<p>One Time Purchase</p>
+							<button class="link-underline desktop-only" type="button">Remove</button>
+						</div>
+					</div>
+					<div class="cart-list-item__end">
+						<span class="cart-list-item__price">$28.00 </span>
+						<div class="counter">
+							<button type="button">-</button>
+							<input type="number" value="1" placeholder="0">
+							<button type="button">+</button>
+						</div>
+						<span class="cart-list-item__total desktop-only">$28.00 </span>
+						<button class="link-underline mobile-only" type="button">Remove</button>
+					</div>
+				</div>
 
-						<li class="accordion-item">
-							<button class="accordion-item__head" type="button">
-								<h3>Shipping and Returns</h3>
-								<span>+</span>
-							</button>
-							<div class="accordion-item__body">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident esse earum veniam itaque magnam
-									animi ipsum odit officia.</p>
-							</div>
-						</li>
+				<div class="cart-list-item">
+					<div class="cart-list-item__start">
+						<div class="cart-list-item__img-wrapper">
+							<img src="./images/home/products/product-3.png" alt="">
+						</div>
+						<div class="cart-list-item-description">
+							<h3>Universal mineral face lotion SPF55</h3>
+							<p>Size: 1.7 fl oz</p>
+							<p>One Time Purchase</p>
+							<button class="link-underline desktop-only" type="button">Remove</button>
+						</div>
+					</div>
+					<div class="cart-list-item__end">
+						<span class="cart-list-item__price">$28.00 </span>
+						<div class="counter">
+							<button type="button">-</button>
+							<input type="number" value="1" placeholder="0">
+							<button type="button">+</button>
+						</div>
+						<span class="cart-list-item__total desktop-only">$28.00 </span>
+						<button class="link-underline mobile-only" type="button">Remove</button>
+					</div>
+				</div>
+			</div>
 
-						<li class="accordion-item">
-							<button class="accordion-item__head" type="button">
-								<h3>How to Recycle</h3>
-								<span>+</span>
-							</button>
-							<div class="accordion-item__body">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt odio autem culpa est hic officiis
-									commodi voluptatum corporis rem eligendi vitae dolor soluta itaque inventore porro, nihil iure
-									temporibus?</p>
-							</div>
-						</li>
-					</ul>
+			<div class="cart-list-footer">
+				<div>
+					<label for="notes">Order Notes</label>
+					<textarea id="notes" placeholder="Type Message..."></textarea>
+				</div>
+				<div>
+					<p class="cart-list-footer-item"><span>Subtotal</span><span>$112.00</span></pc>
+					<p class="cart-list-footer-item--muted">Shipping and tax calculated at checkout.</p>
+					<div class="cart-list-footer-item auto">
+						<div>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="12.5" y="3.5" width="10" height="12" transform="rotate(90 12.5 3.5)" fill="#7373D7" />
+								<path d="M15.5 8.5L12.5 3.5L12.5 13.5L15.5 8.5Z" fill="#7373D7" />
+								<circle cx="4" cy="6" r="1" fill="white" />
+								<circle cx="8" cy="11" r="1" fill="white" />
+								<line x1="8.1543" y1="5.70711" x2="2.70756" y2="11.1538" stroke="white" stroke-linecap="round" />
+							</svg>
+							<span>Auto</span>
+						</div>
+						<span>-$10.00</span>
+					</div>
+					<p class="cart-list-footer-item"><span>Total</span><span>$112.00</span></p>
+					<button class="purple-primary-btn">Secure Checkout</button>
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<!-- Ingredients -->
-	<section class="section-ingredients">
-		<div class="container section-ingredients--grid">
-			<div class="section-ingredients__info">
-				<h2 class="h2">Ingredients</h2>
-				<p class="section-ingredients__description">Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu
-					fugiat nulla pariatur.
-					Excepteur sint
-					occaecat cupidatat non proident.</p>
-
-				<div class="section-ingredients-list">
-					<button type="button" class="section-ingredient-list-item">
-						<img class="section-ingredients-list-item__decor" src="./images/icons/hydrating.svg" alt="">
-						<span>Hydrating Nectar</span>
-						<img class="section-ingredient-list-item__icon" src="./images/icons/arrow-down.svg" alt="">
-					</button>
-					<button type="button" class="section-ingredient-list-item">
-						<img class="section-ingredients-list-item__decor" src="./images/icons/aloe.svg" alt="">
-						<span>Aloe steam cells</span>
-						<img class="section-ingredient-list-item__icon" src="./images/icons/arrow-down.svg" alt="">
-					</button>
-					<button type="button" class="section-ingredient-list-item">
-						<img class="section-ingredients-list-item__decor" src="./images/icons/seamoss.svg" alt="">
-						<span>Seamoss</span>
-						<img class="section-ingredient-list-item__icon" src="./images/icons/arrow-down.svg" alt="">
-					</button>
-					<button type="button" class="section-ingredient-list-item">
-						<img class="section-ingredients-list-item__decor" src="./images/icons/niacinamide.svg" alt="">
-						<span>Niacinamide</span>
-						<img class="section-ingredient-list-item__icon" src="./images/icons/arrow-down.svg" alt="">
-					</button>
-					<button type="button" class="section-ingredient-list-item">
-						<img class="section-ingredients-list-item__decor" src="./images/icons/oil.svg" alt="">
-						<span>Almond oil</span>
-						<img class="section-ingredient-list-item__icon" src="./images/icons/arrow-down.svg" alt="">
-					</button>
-					<button type="button" class="section-ingredient-list-item">
-						<img class="section-ingredients-list-item__decor" src="./images/icons/grape.svg" alt="">
-						<span>Grapeseed oil</span>
-						<img class="section-ingredient-list-item__icon" src="./images/icons/arrow-down.svg" alt="">
-					</button>
-				</div>
-			</div>
-			<div class="section-ingredients-end">
-				<img class="section-ingredients__img" src="./images/pdp/ingredients.jpg" alt="">
-			</div>
-		</div>
-	</section>
-
-	<!-- Products -->
-	<section class="section section-products section-products-detail-page">
-		<div class="container">
-			<div class="section__header section__header--products">
-				<h2 class="h2">you might also like</h2>
-				<div class="products-controls">
-					<div class="slider-arrows">
-						<button class="btn slider-btn-prev" title="Previous slide">
-							<svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M0.123698 5.54036C0.0412326 5.4579 0 5.36024 0 5.2474C0 5.13455 0.0412326 5.03689 0.123698 4.95443L4.95443 0.123698C5.03689 0.0412325 5.13455 0 5.2474 0C5.36024 0 5.4579 0.0412325 5.54036 0.123698L6.62109 1.20443C6.70356 1.28689 6.74479 1.38455 6.74479 1.4974C6.74479 1.61024 6.70356 1.7079 6.62109 1.79036L3.16406 5.2474L6.62109 8.70443C6.70356 8.78689 6.74479 8.88455 6.74479 8.9974C6.74479 9.11024 6.70356 9.2079 6.62109 9.29037L5.54036 10.3711C5.4579 10.4536 5.36024 10.4948 5.2474 10.4948C5.13455 10.4948 5.03689 10.4536 4.95443 10.3711L0.123698 5.54036Z"
-									fill="white" />
-							</svg>
-						</button>
-						<button class="btn slider-btn-next" title="Next slide">
-							<svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M7.53906 5.20443C7.62153 5.28689 7.66276 5.38455 7.66276 5.4974C7.66276 5.61024 7.62153 5.7079 7.53906 5.79036L2.70833 10.6211C2.62587 10.7036 2.52821 10.7448 2.41536 10.7448C2.30252 10.7448 2.20486 10.7036 2.1224 10.6211L1.04167 9.54037C0.959201 9.4579 0.917969 9.36024 0.917969 9.2474C0.917969 9.13455 0.959201 9.03689 1.04167 8.95443L4.4987 5.4974L1.04167 2.04036C0.959201 1.9579 0.917969 1.86024 0.917969 1.7474C0.917969 1.63455 0.959201 1.53689 1.04167 1.45443L2.1224 0.373698C2.20486 0.291233 2.30252 0.25 2.41536 0.25C2.52821 0.25 2.62587 0.291233 2.70833 0.373698L7.53906 5.20443Z"
-									fill="white" />
-							</svg>
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<!-- Products slider -->
-			<div class="swiper products-swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="products-card">
-							<span class="products-card__status">new</span>
-							<img class="products-card__img" src="./images/home/products/product-1.png"
-								alt="Your Skin But Better CC+ Cream with SPF50 12ml">
-							<a class="products-card__link" href="##">+ Quick Shop</a>
-						</div>
-						<h3 class="h3">Your Skin But Better CC+ Cream with SPF50 12ml</h3>
-						<p class="products-card__price">$28.00</p>
-					</div>
-
-					<div class="swiper-slide">
-						<div class="products-card">
-							<span class="products-card__status muted">sale</span>
-							<img class="products-card__img" src="./images/home/products/product-2.png"
-								alt="Your Skin But Better CC+ Cream with SPF50 12ml">
-							<a class="products-card__link" href="##">+ Quick Shop</a>
-						</div>
-						<h3 class="h3">Kem duong VT CICA - VT CICA cream</h3>
-						<p class="products-card__price">$28.00 <span>$32.00</span></p>
-					</div>
-
-					<div class="swiper-slide">
-						<div class="products-card">
-							<img class="products-card__img" src="./images/home/products/product-3.png"
-								alt="Your Skin But Better CC+ Cream with SPF50 12ml">
-							<a class="products-card__link" href="##">+ Quick Shop</a>
-						</div>
-						<h3 class="h3">Niche Beauty CCC Cream – Niche Beauty</h3>
-						<p class="products-card__price">$28.00</p>
-					</div>
-
-					<div class="swiper-slide">
-						<div class="products-card">
-							<img class="products-card__img" src="./images/home/products/product-3.png"
-								alt="Your Skin But Better CC+ Cream with SPF50 12ml">
-							<a class="products-card__link" href="##">+ Quick Shop</a>
-						</div>
-						<h3 class="h3">Niche Beauty CCC Cream – Niche Beauty</h3>
-						<p class="products-card__price">$28.00 <span>$32.00</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Results -->
-	<section class="section section-results">
-		<div class="container">
-			<div class="section-results--layout">
-				<div class="section-results-start">
-					<span class="section-results-start__subtitle">The results</span>
-					<h2 class="h2">From our customers</h2>
-					<div class="slider-arrows">
-						<button class="btn slider-btn-prev" title="Previous slide">
-							<svg width="7" height="11" viewBox="0 0 7 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M0.123698 5.54036C0.0412326 5.4579 0 5.36024 0 5.2474C0 5.13455 0.0412326 5.03689 0.123698 4.95443L4.95443 0.123698C5.03689 0.0412325 5.13455 0 5.2474 0C5.36024 0 5.4579 0.0412325 5.54036 0.123698L6.62109 1.20443C6.70356 1.28689 6.74479 1.38455 6.74479 1.4974C6.74479 1.61024 6.70356 1.7079 6.62109 1.79036L3.16406 5.2474L6.62109 8.70443C6.70356 8.78689 6.74479 8.88455 6.74479 8.9974C6.74479 9.11024 6.70356 9.2079 6.62109 9.29037L5.54036 10.3711C5.4579 10.4536 5.36024 10.4948 5.2474 10.4948C5.13455 10.4948 5.03689 10.4536 4.95443 10.3711L0.123698 5.54036Z" />
-							</svg>
-						</button>
-						<button class="btn slider-btn-next" title="Next slide">
-							<svg width="8" height="11" viewBox="0 0 8 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M7.53906 5.20443C7.62153 5.28689 7.66276 5.38455 7.66276 5.4974C7.66276 5.61024 7.62153 5.7079 7.53906 5.79036L2.70833 10.6211C2.62587 10.7036 2.52821 10.7448 2.41536 10.7448C2.30252 10.7448 2.20486 10.7036 2.1224 10.6211L1.04167 9.54037C0.959201 9.4579 0.917969 9.36024 0.917969 9.2474C0.917969 9.13455 0.959201 9.03689 1.04167 8.95443L4.4987 5.4974L1.04167 2.04036C0.959201 1.9579 0.917969 1.86024 0.917969 1.7474C0.917969 1.63455 0.959201 1.53689 1.04167 1.45443L2.1224 0.373698C2.20486 0.291233 2.30252 0.25 2.41536 0.25C2.52821 0.25 2.62587 0.291233 2.70833 0.373698L7.53906 5.20443Z" />
-							</svg>
-					</div>
-				</div>
-				<div class="section-results-end">
-					<!-- Results slider -->
-					<div class="swiper section-results-swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="./images/pdp/results-1.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/pdp/results-2.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/pdp/results-3.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img src="./images/pdp/results-1.jpg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 
 	<!-- Footer -->
@@ -507,11 +287,8 @@
 		</div>
 	</footer>
 
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<!-- Main scripts -->
 	<script src="./scripts/index.js"></script>
-
 </body>
 
 </html>
