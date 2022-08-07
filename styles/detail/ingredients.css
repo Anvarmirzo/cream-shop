@@ -1,7 +1,7 @@
 .section-ingredients {
   position: relative;
   text-align: center;
-  height: 100vh;
+  height: auto;
   color: var(--dark-color);
 }
 
@@ -73,7 +73,20 @@
   aspect-ratio: 1;
 }
 
+.section-ingredients-end {
+  display: none;
+}
+
+
+.section-products-detail-page .products-controls {
+  display: none;
+}
+
 @media (min-width:992px) {
+  .section-ingredients {
+    height: 100vh;
+  }
+
   .section-ingredients-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
@@ -102,10 +115,16 @@
   .section-ingredients-list-item__decor {
     height: 3.75rem;
   }
+
+  .section-products-detail-page .products-controls {
+    display: flex;
+  }
 }
 
 @media (min-width:1200px) {
-  .section-ingredients__img {
+
+  .section-ingredients__img,
+  .section-ingredients-end {
     display: inline-block;
   }
 
